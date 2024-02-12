@@ -1,0 +1,401 @@
+-form input tag
+
+-explain tables in detail
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            margin: 20px;
+        }
+        table{
+            border: 1px solid black;
+
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+            </tr>
+            <tr>
+                <td>Ramesh</td>
+                <td>ramesh@gmail.com</td>
+                <td>9845012345</td>
+            </tr>
+            <tr>
+                <td>Sita</td>
+                <td>sita@gmail.com</td>
+                <td>9835123045</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+
+<!-- table is used to define  the entire table.it acts as a container for all the other element within the table.  -->
+<!-- tr element defines a table row. it contains one or more <th> <td> element  -->
+<!-- th element  defines a table header cell. it is typically used to label columns or rows -->
+<!-- td element defines a table data cell. it contains the acutal data of the table  -->
+
+
+-explain frames in html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame</title>
+</head>
+<body>
+    <frameset cols="50%,50%">
+        <frame src="https://www.w3schools.com/html/html_table_sizes.asp">
+        <frame src="https://www.w3schools.com/html/html_images.asp">
+    </frameset>
+</body>
+</html>
+<!-- frameset tag is used to contain the group of frames which can be controlled and styled as a unit  -->
+<!-- element also specifies the number of rows and column in the frameset, and how much space they will occupy in a frame  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame</title>
+</head>
+<body>
+    <div>
+        <h2>HTML iframe</h2>
+    </div>
+    <iframe src="https://www.w3schools.com/html/html_images.asp" height="300" width="400"></iframe>
+</body>
+</html>
+
+<!-- Html iframe is used to display a nested webpage (a webpage within a webpage)
+iframe tag define an inline frame, hence it is also an inline frame 
+syntax
+<iframe src="url"> </iframe> 
+we can set height and width of iframe using height and width attributes 
+by default the attributes value are in pixel but we can give it in percent also 
+the attribute that are used in the iframe are height, name, frameborder, width, src, srcdoc, scrolling-->
+
+-what is css. different types of css
+Css stands as Cascading Style Sheet 
+Css is a language that is used to style the HTML
+it discribes  how HTML elements should be displayed  on a web page, including their layout, colors, fonts and other visual aspects
+it allow web developer to seperate the structure and content of a document from its virtual presentation 
+
+Key features 
+Selector 
+properties
+values
+Box model
+
+Different types of Css??
+common types of css are 
+Inline css
+inline css is applied  directly within the HTML document using the style attribute on individual Html elements
+it has the highest specificity and overrides other styles 
+<p style="color: blue; font-size: 16px;">this is the inline style.</p>
+
+Internal CSS
+It is defined within the HTML document using  the style tag in the head section.
+it applies styles to the entire document 
+<head>
+    <style>
+        body{
+            background-color: aliceblue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+External CSS
+is stored in a seperate CSS file and linked to the HTML document using the link tag. 
+it allows for the centralization of style and is commonly used for maintaining consistent styles across multiple page
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+body{
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+CSS Framework
+are pre-prepared libraries that provide common styles and layouts, helping developers create responsive and consistent design quickly.
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+CSS preprocessors
+ are scripting languages that extend  the capabilities of css,
+ eg Sass, less. They allow for the use of variables, nesting and function, making CSS more maintainable and modular
+
+ /* Example using Sass syntax */
+ $primary-color: #3498db;
+ 
+ body {
+     background-color: $primary-color;
+ }
+ -margin and padding in css
+ Margins are used to create space around elements, outside of any defined borders.
+ CSS margin properties are used to create space around elements, outside of any defined borders.
+ With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+
+ css has properties for specifying the margins for each side of an element 
+ margin-top
+ margin-right
+ margin-botton
+ margin-left
+
+ All marging properties can have the following values:
+ auto: the browser calculates the margin
+ length: Specifies a margin in px, pt, cm, etc
+ % : specific a margin in % of the width of the containing element 
+ inherit: specifies that the margin should be inherited from the parent element 
+
+
+ Padding 
+ Padding is used to create space around an element's content, inside of any defined borders.
+
+ The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+
+With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).
+
+CSS has a properties 
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+padding properties can have the following values
+
+length: specifies a padding in px, pt,cm etc
+%: specifies a padding in % of the width of the containing element
+inherit: specifies that the padding should be inherited form the parent element
+
+-alert boxes in javascript
+use the alert() function to display an alert box with a message to the user.
+the alert() function is often used for simple notifications or to get the users attentions
+alert("Hello, this is an alert!");
+you can also include variables and concatenate strings to create dynamic messages within the alert 
+let userName = "John";
+alert("Hello, " + userName + "! Welcome to our website.");
+
+-what is web server and web browser
+web server and web browser are two distinct components of the World Wide Web architecture 
+each playing a crucial role in the process of retriving and displaying web content 
+
+A web browser is basically the software that we use for browsing on the internet and displaying pages.
+A web server refers to the software that provides  its user with the documents they request vis their web browser 
+web browser are application programs. They display a www document, and they usually access the document using other internet service
+
+
+web server is a software application or hardware device that stores, processes, and serves web page and other web content to users over the internet 
+it handels incoming  requests from web browser, retrive the requested resources, and sends them back to the browser for display
+function 
+retrives and processes requested resources listens for and accepts incoming HTTP request from clients send the processed content back to the requesting client. 
+For instance:
+Services like Amazon S3, google cloud storage 
+
+Web Browser 
+A web browser is a software application that allows users to access and navigate the World Wide Web, view web pages and interact with web content
+it interprets HTML, CSS and javascript and other  web technologies to render and display web pages 
+
+function
+Sends HTTP  request to web servers to retrive web pages and resources 
+render HTML and CSS to display the content in a user-friendly format 
+executes javascript to enable dynamic and interactive element on web page 
+manage user interaction, such as clicking links, submitting forms and handling cookies
+for instance
+google chrome, Morzilla Firefox, Apple safari 
+
+-working of the image tag with an example
+-the role of javascript in web development
+javascript is a versatile and essential programming language in web development, playing a crucial role in enhancing the interactivity, responsiveness and overall user experience of website.
+javascript is the worlds most popular programming language 
+js is the programming language of the web
+
+The role of js in web development
+Client-slide Scripting 
+is a primarily a client-side scripting language, meaning it runs in the user's browser.
+allows developer to create dynamic and interactive content directly within the user's web browser without the need of constant communication with thw server 
+
+DOM manipulation 
+enables manipulationof the Document Object Model, which represents the structure of an HTML document
+developers can dynamically modify, add, or remove HTML elements, attributes, and styles to update the content and appearance of a web page in real-time 
+
+Event handling
+allows developer to respond to user actions, such as clicks, keypresses and form submissions,
+enables the creation of interactive and responsive user interfaces
+// Example of handling a button click event
+document.getElementById('myButton').addEventListener('click', function() {
+    alert('Button clicked!');
+});
+
+
+Asynchronous programming
+supports Asynchronous programming through mechanisms like callback, promises and async/await
+essential for handling tasks that may take time, such as fetching data from a server or loading resources, without blocking the main execution thread
+// Example using Promises for asynchronous operations
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+
+
+AJAX
+facilitates the use of AJAX, allowing for asynchronous communication with servers 
+enables the updating of parts of a web page without requiring a full page reload, leading to smoother and more dynamic user experience 
+// Example of making an AJAX request using the Fetch API
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+
+
+Form Validation 
+is commonly used for cliend-side form Validation befor submitting data to the server 
+helps improve user experience by providing instant feedback on input errors
+// Example of simple form validation
+function validateForm() {
+    var email = document.getElementById('email').value;
+    if (!email.includes('@')) {
+        alert('Invalid email address');
+        return false;
+    }
+    return true;
+}
+
+
+Dynamic Content Updates 
+allows developer to update content dynamically based on user interactions, preferences or data changes
+can include rendering of data, creating interactive charts and more
+
+Frameworks and libraries 
+has a rich ecosystem of frameworks and libraries, such as React, angular that simplify and streamline the development of complex web application 
+tools provide components, state management, and other features to enhance productivity
+
+Javascript function to find the factorial of any number
+
+-the purpose of AJAX in web development
+AJAX stands for Asynchronous JavaScript and XML
+set of web develpoment techniques used to create Asynchronous web application 
+purpose = to enable the exchange of data between a web browser and a web server asynchronously, without requiring  a full page reload
+leads to more dynamic and responsive user experience 
+
+key purpose and benefits of using AJAX in web development 
+
+Asynchronous Communication 
+allows web page to send and receive data to/from a web server Asynchronous in the background without blocking the main user interface
+ther operations on the page can continue while data is being fetched or sent to the server.
+
+Improved User Experience 
+developers can create web applications that feel more responsive and interactive. 
+perform actions on a page, such as submitting a form or clicking a button, without experiencing a full page refresh.
+results in a smoother and more seamless user experience.
+
+Reduced Server load
+enables developers to update only specific parts of a web page, rather than reloading the entire page.
+reduces the amount of data transferred between the client and the server, leading to decreased server load and improved overall performance.
+
+Dynamic Content Loading 
+commonly used to load dynamic content on a web page without requiring a complete reload. 
+For example, a news website might use AJAX to fetch and display the latest news articles as the user scrolls down the page, enhancing the site's interactivity.
+
+Form Validation and Submission 
+allows for client-side form validation and submission, providing instant feedback to users without reloading the entire page.
+improves the user experience by reducing the time taken for form submissions.
+
+Auto-completion and Suggestion
+utilized to implement features like auto-completion and suggestions in search bars or input fields
+AJAX requests can fetch relevant data from the server and display suggestions in real-time.
+
+Interactive User Interface 
+nstrumental in creating interactive user interfaces by enabling the update of content dynamically based on user interactions.
+Elements like pop-up windows, modals, and real-time notifications can be implemented seamlessly.
+
+-single-page Application(SPA)
+AJAX is a key technology for building single-page applications, where a significant portion of the application's functionality is loaded dynamically as the user interacts with the page
+aim to provide a more fluid and responsive user experience by loading and updating content asynchronously as the user interacts with the application.
+
+Characteristics
+Dynamic Loading 
+load a single HTML page initially and dynamically update the content as needed. 
+The initial HTML, CSS, and JavaScript files are loaded once, and subsequent updates are fetched and applied as the user interacts with the application.
+
+Client-Side Routing
+SPAs typically use client-side routing to handle navigation without triggering full-page reloads.]
+The application's JavaScript dynamically updates the content based on the URL, allowing users to navigate between different views or sections seamlessly.
+
+Smooth Transistion 
+SPAs often incorporate smooth transitions and animations between different views, enhancing the user experience and giving the application a more polished feel.
+
+Asynchronous Communication:
+
+SPAs leverage AJAX (Asynchronous JavaScript and XML) or other asynchronous techniques to communicate with the server in the background. 
+This allows the application to fetch data and update the UI without requiring a complete page reload.
+
+State Management:
+
+SPAs maintain a client-side state to keep track of the current state of the application.
+ This state is often managed using frameworks like React, Angular, or Vue.js, and it allows the application to remember user interactions and respond accordingly.
+
+Improved Performance:
+By reducing the need for full-page reloads, SPAs can provide a faster and more responsive user experience.
+ Once the initial resources are loaded, subsequent interactions typically involve fetching smaller amounts of data, leading to quicker updates
+
+
+-load balancer in a web system architecture
+A load balancer is a crucial component in a web system architecture designed to distribute incoming network traffic across multiple servers.
+ The primary goal of a load balancer is to optimize resource utilization, maximize throughput, minimize response time, and ensure 
+ the availability and reliability of a web application or service.
+
+-javascript function to find the factorial of any number
+-content delivery network(CDN) in web system
+-associative array
+
+-working of the image tag with an example 
+The Html <img> tag is used to embed an image in a web page 
+Images are not technically inserted into a web page; images are linked to web pages. 
+img tag creates a holding space for the referenced image 
+
+img tag has two required attributes:
+src - Specifies tha path to the image  
+alt - Specifies an alternate text for the image 
+
+syntax
+<img src="url" alt="alternatetext">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Example</title>
+</head>
+<body>
+
+    <h1>Image Example</h1>
+
+    <!-- Example 1: Using an external image from the web -->
+    <img src="https://example.com/images/sample.jpg" alt="Sample Image">
+
+    <!-- Example 2: Using a local image (make sure the image file exists in the same directory as your HTML file) -->
+    <img src="local-image.jpg" alt="Local Image">
+
+</body>
+</html>
